@@ -1,0 +1,53 @@
+name: plum
+description: "Indie tradesman app for plumber & core cutter"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Database (Drift ORM + SQLite)
+  drift: ^2.26.0
+  sqlite3_flutter_libs: ^0.5.28
+
+  # State Management
+  provider: ^6.1.5
+
+  # PDF Generation
+  pdf: ^3.11.3
+
+  # Sharing & Launching
+  share_plus: ^10.1.4
+  url_launcher: ^6.3.1
+
+  # Camera & Photos
+  image_picker: ^1.1.2
+
+  # File System
+  path_provider: ^2.1.5
+  path: ^1.9.1
+
+  # Localization
+  intl: any
+
+  # UI Helpers
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+  # Drift code generator
+  drift_dev: ^2.26.0
+  build_runner: ^2.4.15
+
+flutter:
+  generate: true
+  uses-material-design: true
